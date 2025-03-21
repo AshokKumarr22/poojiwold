@@ -1,0 +1,84 @@
+#!/bin/bash
+
+
+Install gitbash and create a github account
+  -> git --v / git --version : to verify the installation process is done successfully
+
+
+we can use git and github in 2 cases:
+  -> cloning already existed repo
+  -> creating a new repo
+          * creating a new files
+	  * upload existed project directly
+
+
+#create a newfolder (as gitbash) take this folder as path and open gitbashhere 
+
+
+Method -1:
+---------
+cloning already existed repo process :
+------------------------------------
+# FRom github we will copy the https code and enter in local by using "git clone" command
+    -> git clone : creating a entire copy of our existed repo without touching sourcecode 
+                   *git clone url
+# our existed repo is stored in our folder
+# change into existed folder path by using " cd " linux command
+# now we can make changes add ,commit and push into remote by using some commands
+    
+
+    working directory                  staging area                              local repo                      remote repo
+    ----------------                    ----------                                --------                        --------
+    
+    
+                         add                               commit -m" "                              push
+    modified files    --------->   saves modified files   -------------->   records saved files   --------->   stores our files 
+
+
+# working directory : working directory is the place where we modified changes in files and here we cant track the files
+# staging area : staging area is the place where the modified files are saved and here we can track the files
+# local repo : local repo is the place where we commit our saved files by using commit command
+# remote repo : here our files is stored and it is the place where we existed our code
+
+
+git commands :
+------------
+1. git add : to add the modified files into staging area
+             # git add filename : to add specific file
+	     # git add . : to add all files
+2. git commit : records the saved files into local repo with a descriptive message
+             # git commit -m " msg "
+3. git push : used to send the files\modified files into remote repo
+             # git push : pushing to master
+	     # git push -u origin branchname : for specific branch
+	     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
