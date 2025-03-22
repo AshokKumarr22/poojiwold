@@ -43,7 +43,7 @@ Git Merge :
 
 
 
-
+# In remote branch, we use pull request and create merging --> push
 
 
 
