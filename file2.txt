@@ -1,7 +1,6 @@
-
-
-
-Git branch : It is a parallel version of repo to existed files
+Git branch :
+----------
+It is a parallel version of repo to existed files
 # we can create any no.of branches but we have a default branch called master\main branch
 # finally the modified files will merge into master branch
 
@@ -19,6 +18,6 @@ Git commands :
 
 Git del commands :
 ----------------
-1.git branchname -d : to delete a branch locally
-2.git branchname -D : to delete a branch forcefully in locally
+1.git branch -d branchname : to delete a branch locally
+2.git branch -D branchname : to delete a branch forcefully in locally
 3.git push origin --delete branchname : to delete a branch in remote
