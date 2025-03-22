@@ -1,0 +1,72 @@
+# Git pull :
+   -----
+   It fetches the changes the changes into local repo
+      * git pull (in same branch)
+      * git pull origin branchname (in diff branch)
+
+
+ 
+Example :
+------
+# In single branch :
+   -------------
+   -> git pull  --> git add --> git commit --> git push
+
+
+# In 2 branches :
+   ----------
+   *master
+   *dev
+   -> commits done in remote dev branch 
+   case-1:
+   ------
+   -> enter git pull in dev and merge to master
+       git pull (local dev)  --> git switch master  --> git merge dev --> git push -u origin master
+   case-2:
+   ------
+   -> switch to master 
+   -> enter git pull origin dev in master branch and merge from dev
+        git switch master  --> git pull origin dev (local master)  --> git merge dev(local master) --> git push -u origin master
+
+
+# In 3 branches :
+   ----------
+   *master
+   *dev
+   *fea
+   -> commits done in remote fea branch
+   case-1:
+   ------
+   -> enter git pull in fea and merge to dev 
+       git pull (local fea)  --> git switch dev  --> git merge fea --> git push -u origin dev
+   -> merge to master from dev/fea
+        git switch master  --> git merge dev/fea --> git push -u origin master
+
+   case-2:
+   ------
+   -> switch to dev
+   -> enter git pull origin fea in dev branch and merge from fea
+        git switch dev  --> git pull origin fea (local dev)  --> git merge fea --> git push -u origin dev
+   -> merge to master from dev/fea
+        git switch master  --> git merge dev/fea --> git push -u origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
