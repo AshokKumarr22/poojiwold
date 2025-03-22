@@ -21,3 +21,14 @@ Git del commands :
 1.git branch -d branchname : to delete a branch locally
 2.git branch -D branchname : to delete a branch forcefully in locally
 3.git push origin --delete branchname : to delete a branch in remote
+
+
+Git mapping command :
+------------------
+# git remote add url
+
+
+Git pushing commands :
+------------------
+1.git push (if having single branch-master)
+2.git push -u origin branchname (if having many branches and for specific branch)

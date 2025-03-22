@@ -1,0 +1,36 @@
+# Method -2:
+-----------
+# creating a new repo :
+   ----------------
+ # Local repo process :
+    ---------------
+   # create a new folder and open gitbash 
+   # create a new folder named as sampleproject by using mkdir command
+   # change to that directory using cd command
+   # enter git init to create a new repo locally
+        * git init : creating a new repo locally
+   # now .git hidden file created , here our files are saved
+   # by using ls -al command,we can see our hidden files
+
+
+ # Remote repo process :
+    ----------------
+   # create a new repo named with local repo foldername and set as public 
+   # new repo created and fetch it with local repo by using "git remote add url"
+
+
+ # local repo process :
+   -----------------
+  -> create a new file named as file1.txt by touch command
+        *touch : create a newfile
+	*vi : open a file for editing
+	*vim : create and open a file
+	*ls : list all files
+	*ls -al : it shows hidden files
+	*cat : it displays the content of the file
+
+  -> now check git status : it shows the status of working directory and staging area
+  -> do git add , commit and push into remote repo
+  -> but it comes error becuase we didnt map it to remote repo
+  -> we use "git remote add url" for mapping , clone the url from remote repo
+  -> now we can push it into remote repo
