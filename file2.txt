@@ -15,7 +15,6 @@ Git commands :
 4.git checkout -b branchname : creating a new branch and switch to that branch
 
 
-
 Git del commands :
 ----------------
 1.git branch -d branchname : to delete a branch locally
