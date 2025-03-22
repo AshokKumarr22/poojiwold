@@ -5,12 +5,16 @@ Git branch : It is a parallel version of repo to existed files
 # we can create any no.of branches but we have a default branch called master\main branch
 # finally the modified files will merge into master branch
 
+
 Git commands :
 -----------
-1.git branch : to find all the list of branches
+1.git branch : to find all the list of branches in local repo
+    *git branch -r : to find remote branches in local repo
+    *git branch -a : to find all the branches(local,remote) in local rep0
 2.git branch branchname : to create a new branch
 3.git checkout/switch : switching from one branch to another branch
 4.git checkout -b branchname : creating a new branch and switch to that branch
+
 
 
 Git del commands :
