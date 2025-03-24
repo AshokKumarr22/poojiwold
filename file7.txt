@@ -1,0 +1,6 @@
+Git stash :
+--------
+# It used to save the uncommited changes temporarily 
+# it stored in a stasg stack and has a unique index starting with 0 value
+# if we get back this uncommited changes , we use git stash apply
+# to remove the stash commit list , we use git stash pop..
