@@ -1,0 +1,14 @@
+Git revert :
+---------
+-> It is used to undo the commit history by adding new commit
+    git revert commit id
+    git revert commit id --no-edit
+
+
+Git reset :
+--------
+-> It is used to move the header pointer to a specific commit and modified changes
+     git reset commit id : the removed files goes to working area..if we want this files we commit it again..
+-> we have 2 types of reset..they are
+     1.git reset --soft commit id : the removed files are stored in staging area..if we want this files we commit it again..
+     2.git reset --hard commit id : the removed files are completely deleted..
