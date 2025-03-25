@@ -1,0 +1,69 @@
+1.What is git and why we use it?
+Git is a disturbuted version control system used to 
+   manage source code and 
+   track the files
+   coordinate work among multiple developers and to
+   revert the version control system
+
+2.what is github and why we use it?
+Github is a web based hosting service platform used to store our project files and sharing code b/w developers to write a code
+
+3.what is the diff b/w git and github?
+Git is a disturbuted version control system used to manage source code and track the files coordinate work among multiple developers
+whereas Github is a web based hosting service platform used to store our project files
+
+4.what is the diff b/w centralised vcs and disturbuted vcs?
+               centralised vcs                                             Disturbuted vcs
+	        ------------                                                -----------
+	-> we cant create a copy of sourcecode                      -> we can create no.of copy and make changes 
+	   directly we make changes here                               without touching sourcecode
+           (because of this problem we get many issues)
+                                                               
+	-> sometimes server also down                               -> no serverdown 
+
+	->ex: svn,cvs                                               -> ex: git
+
+5.what is pre-commit hooks and post-commit hooks and web-hook?
+Actions that are taken by git before commit -pre commit hook
+Actions that are taken by git after commit -post commit hook
+
+6.Diff b/w fetch and pull?
+Fetch : it updates the latest changes from the remote repo and doesnt merge in local repo
+pull : it  updates the latest changes from the remote repo and merge automatically in local repo
+
+7.Diff b/w fetch and push?
+Fetch : it updates the latest changes from the remote repo 
+push : it sends the commited files into remote repo from git repo
+
+8.Diff b/w commit and push?
+commit : it records the saved files into local repo ,once the files are committed we can send it to remote repo
+push : it sends the commited files into remote repo from git repo
+
+9.Diff b/w merge and rebase?
+merge : it integrates branches together and it combines the changes from one branch to another branch but here we merge the latest commits
+rebase : it combines all the commit changes from one branch to another branch
+
+9.Diff b/w merge and cherrypick?
+merge : it integrates branches together and it combines the changes from one branch to another branch but here we merge the latest commits
+cherrypick : it is used to combine specific committs from one branch to another branch
+              ex: we had a 2 branches master and fea..we committed 2 changes in fea branch ,,then i want to merge 1 commit change into
+	          master ,,then i use "git cherrypick commitid " command
+
+9.Diff b/w git revert and git reset?
+Git revert : it is used to undo the commit files by creating a newcommit id
+               git revert commitid
+	       git revert commitid --n0-edit (if no msg asked)
+Git reset : it is used to select a headpointer for a specific commit and it removes the committed files above headpointer commit files
+            the removed files that are stored in working directory
+	     git reset commitid
+	    we hsve soft reset and hardreset
+	      soft reset: deleted files stored in staging area
+	            git reset commitid --soft
+              hard reset: completely deleted
+	            git reset commitid --hard
+
+10.what is git stash?
+Git stash is used to save the changes temporarily and if we want the files,we use git stash pop..if we get this in diff branch,we use git stash apply
+
+
+

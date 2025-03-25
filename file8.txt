@@ -1,0 +1,55 @@
+Git branching strategy:
+---------------------
+main points;
+----------
+1.name:
+2.long-lived branch: master,development branches
+  short-lived branch: feature,release,hotfix branches
+3.source,destination
+4.merge,how to promote production
+5.merge conflicts
+
+1.name Giit model
+
+2..long-lived branch: master,development branches
+    # master always points production
+    # development is ahead of master branch and for feature ,release branches
+
+3.source,destination:
+  ----------------
+   #new fea:
+     -----
+        dev   fea
+	 |--->commits
+	  <---- |
+    source: dev , destination: dev
+
+
+   #new release/nonproduction:
+     -----------------------
+        dev   release
+	 | ---> test --> master
+     source : dev ,destination: master
+
+
+   #production:
+   ----------
+     master                  dev
+       |  ---> production -->dev
+     source: master , destination: dev
+
+
+   #hotfix bugs:
+      -------
+      master -->new branch --->master --->production --> dev
+
+
+
+Merge conflicts:
+--------------
+Git through conflicts ,if we have a diff content in sameline,git cant merge automatically
+To resolve this conflicts,developers will have to decide which line should be there which line should not be there..
+here it creates a new commit by merging..
+
+
+
