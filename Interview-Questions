@@ -26,6 +26,7 @@ whereas Github is a web based hosting service platform used to store our project
 5.what is pre-commit hooks and post-commit hooks and web-hook?
 Actions that are taken by git before commit -pre commit hook
 Actions that are taken by git after commit -post commit hook
+webhook is a mechanism that allows one application to automatically notifies another application when a specific event occurs like pushes,pullrequests
 
 6.Diff b/w fetch and pull?
 Fetch : it updates the latest changes from the remote repo and doesnt merge in local repo
@@ -43,13 +44,13 @@ push : it sends the commited files into remote repo from git repo
 merge : it integrates branches together and it combines the changes from one branch to another branch but here we merge the latest commits
 rebase : it combines all the commit changes from one branch to another branch
 
-9.Diff b/w merge and cherrypick?
+10.Diff b/w merge and cherrypick?
 merge : it integrates branches together and it combines the changes from one branch to another branch but here we merge the latest commits
 cherrypick : it is used to combine specific committs from one branch to another branch
               ex: we had a 2 branches master and fea..we committed 2 changes in fea branch ,,then i want to merge 1 commit change into
 	          master ,,then i use "git cherrypick commitid " command
 
-9.Diff b/w git revert and git reset?
+11.Diff b/w git revert and git reset?
 Git revert : it is used to undo the commit files by creating a newcommit id
                git revert commitid
 	       git revert commitid --n0-edit (if no msg asked)
@@ -62,8 +63,21 @@ Git reset : it is used to select a headpointer for a specific commit and it remo
               hard reset: completely deleted
 	            git reset commitid --hard
 
-10.what is git stash?
-Git stash is used to save the changes temporarily and if we want the files,we use git stash pop..if we get this in diff branch,we use git stash apply
+12.what is git stash?
+Git stash is used to save the changes temporarily and if we want the files,we use "git stash pop"..if we get this in diff branch,we use "git stash apply"
+
+13.what is pullrequest?
+pullrequest is the way to merge changes from one branch to another branch in remote repo
+
+14.what are branches?explain.
+It is a parallel version of main repo,,we can edit the code directly without touching original sourcecode..
+The main/master branch is the default branch and we can create any branches for new version,bugfixes,release branch
+
+15.How do u resolve merge conflicts in git?
+Git through conflicts ,if we have a diff content in sameline,git cant merge automatically 
+To resolve this conflicts,developers will have to decide which line should be there which line should not be there..
+here it creates a new commit by merging..
+
 
 
 
