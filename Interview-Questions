@@ -78,6 +78,39 @@ Git through conflicts ,if we have a diff content in sameline,git cant merge auto
 To resolve this conflicts,developers will have to decide which line should be there which line should not be there..
 here it creates a new commit by merging..
 
-
+16.what is tags.why we use it?
+Tags is used to point some specific committs i.e;
+we want to create a release points for a specific version of ur code and we want to create a historic restore code in ur repo
+#showing tags:
+  ----------
+* git tag/git tag --list : it shows all the tag lists
+* git tag--l"v.*" : it shows all the specific tag lists   
+#creating a tag:
+ ------------
+* git tag tagname : it creates a tag for lastest commit
+* git tag tagname commitid : it creates a tag for specific commit using commitid
+# we have 2 types of tags :
+     -------------
+1.lightweighted tag : it creates a tag without any descriptive msg
+     * git tag tagname
+     * git tag tagname
+2.alloicated tag : it creates a tag with descriptive msg 
+     * git tag -a tagname -m"msg"
+     * git tag -a tagname commitid -m"msg"
+#pushing tag into remote:
+  ------------------
+* git push origin tagname -->for single tag
+* git push origin --tags  -->for all tags
+* git push origin branchname --tags -->for specific branch
+#delete tags:
+  --------
+* git tag -d tagname -->in local repo
+* git tag origin --delete tagname -->in remote repo
+#for update tag to another commit:
+--------------------------------
+* git push -a tagname -f newcommitid
+#for caompare:
+ -----------
+* git diff tagname1 tagname2
 
 
